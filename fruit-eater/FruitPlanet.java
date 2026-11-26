@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -13,18 +14,19 @@ public class FruitPlanet extends World
      */
     public FruitPlanet()
     {
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
 
-        // Crear jugador
+        
         Player babyAdventure = new Player();
         addObject(babyAdventure, 0, 0);
 
         // Añadir abeja
         addObject(new Bee(), 300, 0);
 
-        // Crear una fila de 5 estrellas en y = 350, dejando un margen de 20.
-        crearFila(5, 350, 20);
+        // Crear tres filas de estrellas
+        crearFila(5, 100, 20);
+        crearFila(5, 200, 20);
+        crearFila(5, 300, 20);
     }
 
     /**
